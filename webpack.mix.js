@@ -8,7 +8,9 @@ mix.vue({
 })
 
 // CSS/SCSS
-mix.postCss('resources/css/app.css', 'public/css', []);
+mix.postCss('resources/css/app.css', 'public/css', [
+    require('tailwindcss')
+]);
 
 
 // Alias
